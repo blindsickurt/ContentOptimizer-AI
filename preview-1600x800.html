@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1600px; height: 800px;
+  background: linear-gradient(135deg, #0a0f1f 0%, #162140 50%, #0a0f1f 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+.container { display: flex; gap: 60px; align-items: center; }
+/* Input panel */
+.input-panel {
+  width: 480px; background: #1a1f35; border-radius: 12px;
+  border: 1px solid #2a3050; overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.input-header {
+  background: #2a3050; padding: 14px 20px;
+  color: #c8d6e5; font-size: 13px; font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+}
+.input-body { padding: 24px; }
+.text-sample {
+  background: #0f1429; border-radius: 8px; padding: 16px;
+  border: 1px solid #2a3050;
+  margin-bottom: 16px;
+}
+.text-sample p { color: #7b8cba; font-size: 12px; line-height: 1.8; }
+.analyze-btn {
+  background: #ff6b00; border: none; border-radius: 8px;
+  padding: 14px 32px; color: #fff; font-weight: 600; font-size: 16px;
+  text-align: center; width: 100%;
+}
+/* Arrow */
+.arrow-section { text-align: center; }
+.arrow { color: #ff6b00; font-size: 48px; }
+/* Output panel */
+.output-panel {
+  width: 520px; background: #1a1f35; border-radius: 12px;
+  border: 1px solid #2a3050; overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.output-header {
+  background: #2a3050; padding: 14px 20px;
+  color: #c8d6e5; font-size: 13px; font-weight: 600;
+  display: flex; justify-content: space-between;
+}
+.output-body { padding: 20px; }
+.field { margin-bottom: 14px; }
+.field-label { color: #ff6b00; font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+.field-value { color: #c8d6e5; font-size: 13px; }
+.field-tag {
+  display: inline-block; background: #2a3050; color: #ff6b00;
+  padding: 4px 10px; border-radius: 4px; font-size: 11px; margin: 2px;
+}
+/* Top text */
+.top-text {
+  position: absolute; top: 80px; left: 50%; transform: translateX(-50%);
+  text-align: center;
+}
+.title { color: #fff; font-size: 48px; font-weight: 700; letter-spacing: -1px; }
+.title span { color: #ff6b00; }
+.subtitle { color: #7b8cba; font-size: 18px; margin-top: 6px; }
+.features {
+  position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 50px;
+}
+.feature { color: #5a6480; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.feature-icon { color: #ff6b00; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="top-text">
+  <div class="title">Content<span>Optimizer</span> AI</div>
+  <div class="subtitle">Paste Any Content. Get Perfect SEO in Seconds.</div>
+</div>
+<div class="container">
+  <div class="input-panel">
+    <div class="input-header">📝 Input Content</div>
+    <div class="input-body">
+      <div class="text-sample">
+        <p>In the rapidly evolving landscape of artificial intelligence, small and medium businesses are finding new ways to leverage automation tools. From customer service chatbots to automated data analysis, the possibilities seem endless. However, many business owners struggle with knowing where to start or which tools provide the best return on investment...</p>
+      </div>
+      <div class="analyze-btn">🚀 Analyze Content</div>
+    </div>
+  </div>
+  <div class="arrow-section">
+    <div class="arrow">→</div>
+  </div>
+  <div class="output-panel">
+    <div class="output-header"><span>✨ SEO Analysis Results</span><span>0.4s</span></div>
+    <div class="output-body">
+      <div class="field">
+        <div class="field-label">📌 Title</div>
+        <div class="field-value">AI Automation for SMBs: Where to Start in 2026</div>
+      </div>
+      <div class="field">
+        <div class="field-label">📝 Meta Description</div>
+        <div class="field-value">Discover how small businesses can leverage AI automation tools for growth. A practical guide to chatbots, data analysis, and ROI optimization.</div>
+      </div>
+      <div class="field">
+        <div class="field-label">🏷️ Keywords</div>
+        <div>
+          <span class="field-tag">AI automation</span>
+          <span class="field-tag">small business</span>
+          <span class="field-tag">ROI optimization</span>
+          <span class="field-tag">chatbots</span>
+          <span class="field-tag">data analysis</span>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field-label">📊 Readability Score</div>
+        <div class="field-value">74 / 100 (Good)</div>
+      </div>
+      <div class="field">
+        <div class="field-label">💡 Suggestions</div>
+        <div class="field-value">Add a compelling statistic in first paragraph, include a call-to-action at the end, break the third paragraph into shorter sentences.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="features">
+  <div class="feature"><span class="feature-icon">✓</span> AI-powered analysis</div>
+  <div class="feature"><span class="feature-icon">✓</span> Results in seconds</div>
+  <div class="feature"><span class="feature-icon">✓</span> Lifetime license</div>
+  <div class="feature"><span class="feature-icon">✓</span> API + web access</div>
+</div>
+</body>
+</html>
